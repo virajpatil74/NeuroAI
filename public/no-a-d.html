@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+  <link rel="stylesheet" href="/global.css" />
+  <link rel="stylesheet" href="/no-a-d.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun Dodum:wght@400&display=swap" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=GFS Neohellenic:ital,wght@0,400;0,700;1,400&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gilda Display:wght@400&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@400&display=swap" />
+  <link rel="shortcut icon" href="/original-e4deaa0018892167ed98e0727fd59a0e-removebg-preview.png" type="image/x-icon">
+  <title>NeuroAI - No Alzheimer’s Detected</title>
+</head>
+
+<body>
+  <div class="no-ad">
+    <header class="navbar5">
+      <div class="navbar-child3"></div>
+      <div class="original-e4deaa0018892167ed98e-container">
+        <img class="original-e4deaa0018892167ed98e-icon5" loading="lazy" alt=""
+          src="/originale4deaa0018892167ed98e0727fd59a0eremovebgpreview-1@2x.png" />
+
+        <div class="neuroai5">NeuroAI</div>
+      </div>
+      <div class="home-button">
+        <div class="component-15">
+          <a id="hometext4" class="home6">HOME</a>
+          <img class="vector-icon" loading="lazy" alt="" src="/vector-13.svg" />
+        </div>
+      </div>
+      <div class="navbar-links">
+        <a class="diagnose6" id="dIAGNOSEText">DIAGNOSE</a>
+      </div>
+      <div class="navbar-links1">
+        <a class="diagnose6" id="eDUCATIONText">EDUCATION</a>
+      </div>
+      <div class="navbar-links2">
+        <a class="about5" id="aBOUTText">ABOUT</a>
+      </div>
+      <div class="navbar-links3">
+        <a class="diagnose6" id="rESOURCESText">RESOURCES</a>
+      </div>
+      <form class="razorpay-button">
+        <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_Ov1E8xLoYmOneH"
+          async> </script>
+      </form>
+      <!-- <img class="screenshot-2024-09-06-122453-15" alt="" src="/screenshot-20240906-122453-1@2x.png" />
+
+      <img class="screenshot-2024-09-06-122852-15" alt="" src="/screenshot-20240906-122852-1@2x.png" />
+
+      <div class="screenshot-2024-09-06-123203-1-wrapper2">
+        <img class="screenshot-2024-09-06-123203-15" loading="lazy" alt=""
+          src="/screenshot-20240906-123203-1@2x.png" />
+      </div> -->
+    </header>
+    <main class="result-container-wrapper">
+      <section class="result-container">
+        <div class="result-inner-container">
+          <div class="result-message-container">
+            <div class="result-message-inner-container">
+              <div class="result-icon-container">
+                <img class="e294c69c9e86a174401183e33a06f0-icon" loading="lazy" alt=""
+                  src="/76e294c69c9e86a174401183e33a06f0-1@2x.png" />
+
+                <div class="result-message-sub-container">
+                  <h2 class="pheww">Pheww!</h2>
+                </div>
+              </div>
+            </div>
+            <h2 class="all-clear-no">
+              All Clear! No Signs of Alzheimer's Detected.
+            </h2>
+          </div>
+        </div>
+        <div class="our-analysis-has">
+          Our analysis has determined that no visible symptoms of Alzheimer's
+          disease were detected in the provided MRI scan.
+        </div>
+      </section>
+    </main>
+  </div>
+  <title>NeuroAI</title>
+  <script>
+    async function playSpeech() {
+      const apiKey = 'sk_be9a95c9215d7e3394e9f62fd397a04bb2d2dfca437b43ff';  // Your API key (Do not expose in production)
+      const urlParams = new URLSearchParams(window.location.search);
+      const firstName = urlParams.get('name');
+      const text = `Namaste ${firstName}, Neuro AI mein aapka swagat hai. Aapke MRI ke jaanch par hame lagta hai ki app bilkul theek hai, koi bhi chinta ki baat nahi hai. Agar aapko alzheimer's ke baare mein aadhik jaankari chahiye toh aap education section par jaa sakte hai`;  // Get text from the hidden textarea
+
+      const response = await fetch('https://api.elevenlabs.io/v1/text-to-speech/zT03pEAEi0VHKciJODfn/stream', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'xi-api-key': apiKey
+        },
+        body: JSON.stringify({
+          text: text,
+          model_id: "eleven_multilingual_v2",  // Specify the multilingual model
+          voice_settings: {
+            stability: 0.62,
+            similarity_boost: 0.3,
+            style: 0.5
+          }
+        })
+      });
+
+      if (response.ok) {
+        const audioBlob = await response.blob();  // Get audio response as a blob
+        const audioUrl = URL.createObjectURL(audioBlob);  // Convert blob to URL
+
+        // Create a new audio object to play the audio in the background
+        const audio = new Audio(audioUrl);
+        audio.play();
+      } else {
+        console.error('Error fetching audio:', response.statusText);
+      }
+    }
+
+    // Call the playSpeech function when the page loads
+    window.onload = playSpeech;
+
+    var hometext4 = document.getElementById("hometext4");
+    if (hometext4) {
+      hometext4.addEventListener("click", function (e) {
+        window.location.href = "/";
+      });
+    }
+
+    var dIAGNOSEText = document.getElementById("dIAGNOSEText");
+    if (dIAGNOSEText) {
+      dIAGNOSEText.addEventListener("click", function (e) {
+        window.location.href = "/diagnose";
+      });
+    }
+
+    var eDUCATIONText = document.getElementById("eDUCATIONText");
+    if (eDUCATIONText) {
+      eDUCATIONText.addEventListener("click", function (e) {
+        window.location.href = "./education-brain-basics";
+      });
+    }
+
+    var aBOUTText = document.getElementById("aBOUTText");
+    if (aBOUTText) {
+      aBOUTText.addEventListener("click", function (e) {
+        window.location.href = "./about";
+      });
+    }
+
+    var rESOURCESText = document.getElementById("rESOURCESText");
+    if (rESOURCESText) {
+      rESOURCESText.addEventListener("click", function (e) {
+        window.location.href = "./resources";
+      });
+    }
+  </script>
+  <script src="https://widget.cxgenie.ai/widget.js" data-aid="a6e9e2c5-d13f-4fe2-a916-85c4d7f97035"
+    data-lang="en"></script>
+</body>
+
+</html>

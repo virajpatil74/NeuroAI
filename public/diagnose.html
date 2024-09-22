@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+  <link rel="stylesheet" href="/global.css" />
+  <link rel="stylesheet" href="/diagnose.css" />
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun Dodum:wght@400&display=swap" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=GFS Neohellenic:ital,wght@0,400;0,700;1,400&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gilda Display:wght@400&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@400&display=swap" />
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/opencv.js"></script>
+  <link rel="shortcut icon" href="/original-e4deaa0018892167ed98e0727fd59a0e-removebg-preview.png" type="image/x-icon">
+  <title>NeuroAI - Diagnose</title>
+</head>
+
+<body>
+  <div class="diagnose">
+    <header class="navbar">
+      <div class="navbar-child"></div>
+      <div class="original-e4deaa0018892167ed98e-parent">
+        <img class="original-e4deaa0018892167ed98e-icon" loading="lazy" alt=""
+          src="/originale4deaa0018892167ed98e0727fd59a0eremovebgpreview-1@2x.png" />
+
+        <div class="neuroai">NeuroAI</div>
+      </div>
+      <div class="home-icon">
+        <div class="component-1" id="component1Container">
+          <a class="home">HOME</a>
+          <img class="component-1-child" loading="lazy" alt="" src="/vector-13.svg" />
+        </div>
+      </div>
+      <div class="navbar-items">
+        <a class="education" id="dIAGNOSEText">DIAGNOSE</a>
+      </div>
+      <div class="navbar-items1">
+        <a class="education" id="eDUCATIONText">EDUCATION</a>
+      </div>
+      <div class="navbar-items2">
+        <a class="about" id="aBOUTText">ABOUT</a>
+      </div>
+      <div class="navbar-items3">
+        <a class="education" id="rESOURCESText">RESOURCES</a>
+      </div>
+      <!-- <img class="screenshot-2024-09-06-122453-1" alt="" src="/screenshot-20240906-122453-1@2x.png" />
+
+      <img class="screenshot-2024-09-06-122852-1" alt="" src="/screenshot-20240906-122852-1@2x.png" />
+
+      <div class="screenshot-2024-09-06-123203-1-wrapper">
+        <img class="screenshot-2024-09-06-123203-1" loading="lazy" alt=""
+          src="/screenshot-20240906-123203-1@2x.png" />
+      </div> -->
+      <form class="razorpay-button">
+        <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_Ov1E8xLoYmOneH"
+          async> </script>
+      </form>
+    </header>
+    <main class="content">
+      <section class="form-container-parent">
+        <div class="form-container">
+          <div class="form-fields">
+            <div class="image-container">
+              <img class="original-fdf25c6756fda8528eb38-icon" loading="lazy" alt=""
+                src="/originalfdf25c6756fda8528eb3891905dc07b8-1@2x.png" />
+            </div>
+            <div class="form-title">
+              <div class="experiencing-memory-loss">
+                Experiencing Memory Loss or Other Symptoms?
+              </div>
+              <div class="welcome-to-our">
+                Welcome to our advanced Alzheimer's diagnosis page, where
+                cutting-edge artificial intelligence meets precision
+                healthcare. Here, you can seamlessly upload your MRI scan and
+                let our sophisticated machine learning model analyze it with
+                state-of-the-art accuracy. Our platform provides reliable
+                predictions to assist in early diagnosis and better
+                understanding of Alzheimer's disease. Upload your scan and
+                take the first step toward informed insights and improved
+                patient care.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="input-fields">
+          <div class="input-fields-child"></div>
+          <div class="overlay">
+            <input type="text" id="firstname" required>
+          </div>
+
+          <div class="name-fields">
+            <div class="first-name-field">
+              <div class="first-name-input">
+                <div class="first-name-label">
+                  <div class="first-name">First Name</div>
+                </div>
+                <div class="first-name-box">
+                </div>
+                <div class="email-fields">
+                  <div class="email-input">
+                    <div class="first-name-label">
+                      <div class="gender">Gender</div>
+                    </div>
+                    <input id="genderBox" class="gender-box" type="text" />
+                  </div>
+                  <div class="first-name-label">
+                    <div class="e-mail">E-mail</div>
+                  </div>
+                </div>
+              </div>
+              <div class="first-name-input">
+                <div class="last-name-input">
+                  <div class="first-name">Last Name</div>
+                </div>
+                <input type="text" class="last-name-box" id="lastname">
+                <div class="email-input">
+                  <div class="first-name-label">
+                    <div class="age">Age</div>
+                  </div>
+                  <input class="gender-box" type="text" />
+                </div>
+              </div>
+            </div>
+            <div class="city-field">
+              <input id="cityBox" class="city-box" type="text" />
+            </div>
+            <div class="city">
+              <div class="first-name">City of Residence</div>
+            </div>
+            <input id="city-of-residence" class="residence-box" type="text" />
+          </div>
+          <div class="rectangle-parent">
+            <div class="frame-child"></div>
+            <div class="drop-it-like-its-hot-parent">
+
+              <form id="upload-form" action="/predict" method="post" enctype="multipart/form-data">
+                <input type="file" id="fileInput" name="file" accept="image/*" />
+                <label for="fileInput">
+                  <div class="drop-message" id="drop-image-here">
+                    <p>Upload Your MRI Here! </p>
+                  </div>
+                </label>
+
+
+                <div id="fileNameDisplay"></div>
+                <div id="result">
+
+                </div>
+
+                <!-- <div class="drop-it-like">Drop it like it's hot!</div>
+              <div class="frame-item"></div> -->
+            </div>
+          </div>
+          <div class="prediction-button">
+            <button class="button-container">
+              <div class="prediction-box" id="predictionBox"></div>
+              <div class="get-prediction" id="getPredictionText"></div>
+            </button>
+          </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- <script>
+    document.getElementById("upload-form").onsubmit = function (event) {
+      event.preventDefault();  // Prevent the default form submission behavior
+
+      var city = document.getElementById("city-of-residence").value;
+
+      var formData = new FormData(this);
+      // for (let [key, value] of formData.entries()) {
+      //   console.log(`${key}:`, value);
+      // }
+
+      fetch('/predict', {
+        method: 'POST',
+        body: formData,
+        credentials: 'include'  // Include credentials if needed
+      })
+        .then(response => response.json())
+        .then(data => {
+          if (data.prediction !== undefined) {
+            // Redirect to "/processing" page and pass the prediction value
+            window.location.href = '/diagnosing?jsepwngv=' + encodeURIComponent(data.prediction) + '&ds5rse8p6=' + encodeURIComponent(city);
+          } else {
+            document.getElementById('result').innerHTML = 'Error: ' + (data.error || 'Unknown error');
+          }
+        })
+        .catch(error => {
+          console.error('Error:', error);
+        });
+    };
+
+
+  </script> -->
+  <script>
+    function typeText(element, text, duration = 1000, callback) {
+      element.textContent = ""; // Clear the element's text
+      let index = 0;
+
+      const typingInterval = setInterval(() => {
+        if (index < text.length) {
+          element.textContent += text[index]; // Add the next character
+          index++;
+        } else {
+          clearInterval(typingInterval); // Stop typing once the full text is displayed
+          if (callback) callback(); // Execute the callback function if provided
+        }
+      }, duration / text.length); // Calculate typing speed per letter
+    }
+
+    // When the page first loads, initialize the "Get Prediction" text and add breathing effect
+    document.addEventListener("DOMContentLoaded", function () {
+      const predictionText = document.getElementById("getPredictionText");
+      predictionText.textContent = "Get Prediction"; // Set the initial text
+
+      // Move text to the right with inline style
+      predictionText.style.right = "70px"; // Adjust the value as needed
+      predictionText.style.fontSize = "42px";
+      predictionText.style.top = "10px";
+      predictionText.classList.add("breathing-opacity"); // Apply initial breathing effect
+    });
+
+    var namefirst;
+    var namelast;
+    var gender;
+    var age;
+    var email;
+    var city;
+
+    // When the button is clicked
+    document.querySelector('.button-container').addEventListener('click', function () {
+      namefirst = document.getElementById('firstname').value.trim();
+      namelast = document.getElementById('lastname').value.trim();
+      gender = document.getElementById('genderBox').value.trim();
+      age = document.getElementById('genderBox').value.trim();
+      email = document.getElementById('cityBox').value.trim();
+      city = document.getElementById('city-of-residence').value.trim();
+
+      if (!namefirst || !namelast || !gender || !age || !email || !city) {
+        alert('Please fill out all required fields.');
+        return; // Exit the function if any input is missing
+      }
+
+      const messages = [
+        "Analyzing Neuronal Data...",
+        "Mapping Cognitive Decline...",
+        "Biomarkers Under Review...",
+        "Initiating Diagnosis Process..."
+      ];
+
+      let currentIndex = 0;
+      const typingDuration = 1000; // 1 second for the typing effect
+      const displayTime = 2500; // Total time for displaying each message including typing (2.5 seconds)
+
+      // Get the prediction button text element
+      const predictionText = document.getElementById("getPredictionText");
+
+      predictionText.style.right = "126px"; // Adjust the value as needed
+      predictionText.style.fontSize = "32px";
+      predictionText.style.top = "16px";
+
+      // Remove the initial breathing (opacity only) and add the enhanced breathing (scaling + opacity)
+      predictionText.classList.remove("breathing-opacity");
+      predictionText.classList.add("breathing-scale");
+
+      // Function to update the button text with typing effect
+      function updateText() {
+        if (currentIndex < messages.length) {
+          typeText(predictionText, messages[currentIndex], typingDuration, () => {
+            // Proceed to the next message only after the full display time has passed
+            setTimeout(() => {
+              currentIndex++;
+              if (currentIndex < messages.length) {
+                updateText(); // Continue to the next message
+              } else {
+                // Ensure the final message stays breathing with scaling
+                predictionText.classList.remove("breathing-scale");
+                predictionText.classList.add("breathing-scale");
+              }
+            }, displayTime - typingDuration); // Wait until the full display time has passed before updating text
+          });
+        }
+      }
+
+      // Start the text updates
+      updateText();
+    });
+
+    const PROJECT_ID = '126404707040';
+    const ENDPOINT_ID = '5399605946496319488';
+    const YOUR_ACCESS_TOKEN = 'ya29.a0AcM612ztHmPwOYt7ozmH3MPgyNHHSenHVU_OUZkeTtJ9DYnAVCiFEBLgHfTFiZFsVPG2VyjxBt2YoPpgDBybzv_cshBRJSld7mPo0aBZkqhTOyJ3HuZRiot_TjCtKlVfyPETpUSn0iVWI85yZR3YvXzNLznn_lOiz6DnPvvOwAeV3Shj1bnDkkEZVWJ0rvRBELfh_reDikcSB_yuLY3wyIpi7KKH2EOkqSZ8WI1-lJYkTpF3StbfPldDtgu7AOP1qidveU5ci7dp_odUSReNbWSJoGULrZQ3YsZs55DdA_TPx0e4wvCyGcHMMPAzwZvA_01FE11k0wzoSdQJrO23hm1gQLHnZDsDJgmAZC4-T5ZhktkHljQVk997NmthpQNWUzi8q2ROho5AYyZJIYrRoU4u0FRQlDs5L2vRaCgYKAbQSARISFQHGX2Mi_Co_FYZOxCAzJSQFX5EPBg0427';
+    document.getElementById("upload-form").onsubmit = async function (event) {
+      event.preventDefault();  // Prevent the default form submission behavior
+
+      const fileInput = document.getElementById("fileInput");
+      const file = fileInput.files[0];
+      const city = document.getElementById("city-of-residence")?.value || '';
+      const firstName = document.getElementById('firstname').value;
+      const lastName = document.querySelector('.last-name-box').value;
+
+      console.log('Selected file:', file);
+      console.log('City of residence:', city);
+
+      if (!file) {
+        document.getElementById('result').innerText = 'Please select an image file.';
+        console.error('No file selected');
+        return;
+      }
+
+      let image = new Image();
+      let reader = new FileReader();
+
+      reader.onload = async function (e) {
+        console.log('File read successfully:', e.target.result);
+        image.src = e.target.result;
+
+        image.onload = async function () {
+          console.log('Image loaded');
+
+          // Convert the image to a tensor
+          let imageArray = tf.browser.fromPixels(image);
+          console.log('Image tensor shape:', imageArray.shape);
+
+          // Check if the image has 1 channel (grayscale), and convert it to RGB if needed
+          if (imageArray.shape[2] !== 3) {
+            console.log('Image is grayscale, converting to RGB');
+
+            let imageCanvas = document.createElement('canvas');
+            let ctx = imageCanvas.getContext('2d');
+            imageCanvas.width = image.width;
+            imageCanvas.height = image.height;
+            ctx.drawImage(image, 0, 0);
+
+            // Convert grayscale to RGB using OpenCV
+            imageArray = cv.cvtColor(imageArray, cv.COLOR_GRAY2RGB);
+            console.log('Converted grayscale to RGB');
+          }
+
+          // Resize the image to 176x176
+          imageArray = tf.image.resizeBilinear(imageArray, [176, 176]);
+          console.log('Resized image tensor shape:', imageArray.shape);
+
+          // Convert to float32 and normalize the image
+          imageArray = imageArray.toFloat().div(tf.scalar(255.0));
+          console.log('Normalized image tensor');
+
+          // Add an extra dimension to match the model input shape
+          //imageArray = imageArray.expandDims(0);
+          console.log('Final image tensor shape:', imageArray.shape);
+
+          // Convert the tensor to a JSON-compatible array
+          let imageData = imageArray.arraySync();
+          console.log('Image data for GCP payload:', imageData);
+
+          // Prepare the payload for the GCP API
+          const payload = {
+            instances: [
+              { "input_layer_8": imageData }
+            ]
+          };
+
+          console.log('Payload for GCP API:', payload);
+
+          fetch('https://api.emailjs.com/api/v1.0/email/send', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Authorization': 'Basic ' + btoa('Kia16Je4rxItCGE6U') // If required by your API
+            },
+            body: JSON.stringify({
+              service_id: 'service_3e9j7rq',
+              template_id: 'template_gghq3f8',
+              user_id: 'Kia16Je4rxItCGE6U',  // This might vary based on your setup
+              template_params: {
+                first_name: namefirst,
+                last_name: namelast,
+                to_email: email,
+                reply_to: 'support@neuroai.life'
+              }
+            })
+          })
+            .then(response => response.json())
+            .then(data => console.log('Success:', data))
+            .catch((error) => console.error('Error:', error));
+
+          // try {
+          //   // Send the image data to the GCP endpoint
+          //   const response = await fetch(`https://us-central1-aiplatform.googleapis.com/v1/projects/${PROJECT_ID}/locations/us-central1/endpoints/${ENDPOINT_ID}:predict`, {
+          //     method: 'POST',
+          //     headers: {
+          //       'Content-Type': 'application/json',
+          //       'Authorization': `Bearer ${YOUR_ACCESS_TOKEN}` // If needed, add authentication token here
+          //     },
+          //     body: JSON.stringify(payload)
+          //   });
+
+          //   console.log('GCP API response status:', response.status);
+
+          //   const data = await response.json();
+          //   console.log('GCP API response data:', data);
+
+          //   if (data.predictions) {
+          //     // Redirect to "/diagnosing" page and pass the prediction value
+          //     const prediction = encodeURIComponent(data.predictions[0].yourPredictionField);
+          //     const redirectUrl = `/diagnosing?jsepwngv=${prediction}&ds5rse8p6=${encodeURIComponent(city)}`;
+          //     console.log('Data prediction:', data.predictions[0].yourPredictionField);
+          //     //window.location.href = redirectUrl;
+          //   } else {
+          //     document.getElementById('result').innerText = 'Error: ' + (data.error || 'Unknown error');
+          //   }
+          // } catch (error) {
+          //   console.error('Error:', error);
+          //   document.getElementById('result').innerText = 'Error: ' + error.message;
+          // }
+          try {
+            // Send the image data to the GCP endpoint
+            const response = await fetch(`https://us-central1-aiplatform.googleapis.com/v1/projects/${PROJECT_ID}/locations/us-central1/endpoints/${ENDPOINT_ID}:predict`, {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${YOUR_ACCESS_TOKEN}` // Add the authentication token here if needed
+              },
+              body: JSON.stringify(payload) // 'payload' is your request body containing the image data
+            });
+
+            console.log('GCP API response status:', response.status);
+
+            const data = await response.json();
+            console.log('GCP API response data:', data);
+
+            // Check if the response contains predictions
+            if (data.predictions && data.predictions.length > 0) {
+              // Define the classes according to the indices
+              const CLASSES = [
+                'kt5esgle8se3eso8p',
+                'kjlk46dgs6se8g1rrg6',
+                'gf84dr5h6j4fkrs3rh9df',
+                'rhd6jt9jfdk7k6d8e2wb4sd'
+              ];
+
+              // Step 1: Extract the prediction array (assuming it's a 2D array as seen in the screenshot)
+              const predictionArray = data.predictions[0];
+
+              // Step 2: Find the index of the maximum value in the prediction array
+              const maxIndex = predictionArray.indexOf(Math.max(...predictionArray));
+
+              // Step 3: Get the corresponding class name from the CLASSES array
+              const predictedClass = CLASSES[maxIndex];
+
+              // Step 4: Redirect to "/diagnosing" page and pass the predicted class name and city
+              const redirectUrl = `/diagnosing?jsepwngv=${encodeURIComponent(predictedClass)}&ds5rse8p6=${encodeURIComponent(city)}&firstname=${encodeURIComponent(firstName)}&lastname=${encodeURIComponent(lastName)}`;
+              console.log('Redirecting to:', redirectUrl);
+
+              // Perform the actual redirection (uncomment the line below in production)
+              window.location.href = redirectUrl;
+            } else {
+              alert('Our backend is currently down for maintenance. Please try again later.');
+              // Handle the case where predictions are not found in the response
+              //document.getElementById('result').innerText = 'Error: ' + (data.error || 'Unknown error');
+            }
+          } catch (error) {
+            console.error('Error:', error);
+            // Display the error message in the 'result' element
+            //document.getElementById('result').innerText = 'Error: ' + error.message;
+            alert('Our backend is currently down for maintenance. Please try again later.');
+          }
+
+        };
+      };
+
+      reader.readAsDataURL(file);  // Convert the image to a data URL for processing
+    };
+  </script>
+
+  <script>
+    var component1Container = document.getElementById("component1Container");
+    if (component1Container) {
+      component1Container.addEventListener("click", function (e) {
+        window.location.href = "/";
+      });
+    }
+
+    var dIAGNOSEText = document.getElementById("dIAGNOSEText");
+    if (dIAGNOSEText) {
+      dIAGNOSEText.addEventListener("click", function (e) {
+        window.location.href = "/diagnose";
+      });
+    }
+
+    var eDUCATIONText = document.getElementById("eDUCATIONText");
+    if (eDUCATIONText) {
+      eDUCATIONText.addEventListener("click", function (e) {
+        window.location.href = "/education-brain-basics";
+      });
+    }
+
+    var aBOUTText = document.getElementById("aBOUTText");
+    if (aBOUTText) {
+      aBOUTText.addEventListener("click", function (e) {
+        window.location.href = "/about";
+      });
+    }
+
+    var rESOURCESText = document.getElementById("rESOURCESText");
+    if (rESOURCESText) {
+      rESOURCESText.addEventListener("click", function (e) {
+        window.location.href = "/resources";
+      });
+    }
+
+    var predictionBox = document.getElementById("predictionBox");
+    if (predictionBox) {
+      predictionBox.addEventListener("click", function (e) {
+        window.location.href = "/diagnosing";
+      });
+    }
+  </script>
+  <script>
+    document.getElementById('fileInput').addEventListener('change', function () {
+      var fileInput = document.getElementById('fileInput');
+      var fileNameDisplay = document.getElementById('fileNameDisplay');
+      var uploadImage = document.getElementById('drop-image-here');
+
+      if (fileInput.files.length > 0) {
+        fileNameDisplay.textContent = fileInput.files[0].name;
+        uploadImage.textContent = "";
+      } else {
+        fileNameDisplay.textContent = 'No file chosen';
+        uploadImage.textContent = "";
+      }
+    });
+  </script>
+  <script src="https://widget.cxgenie.ai/widget.js" data-aid="a6e9e2c5-d13f-4fe2-a916-85c4d7f97035"
+    data-lang="en"></script>
+</body>
+
+</html>

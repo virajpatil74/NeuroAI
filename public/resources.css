@@ -1,0 +1,482 @@
+body {
+  background-color: black;
+}
+
+.razorpay-button {
+  padding-top: 44px;
+}
+
+.fd46f8874347795db844f595842-1-icon,
+.navbar-child7 {
+  align-self: stretch;
+  position: relative;
+  display: none;
+  max-width: 100%;
+}
+
+.fd46f8874347795db844f595842-1-icon {
+  overflow: hidden;
+  opacity: 50%;
+  max-height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.navbar-child7 {
+  width: 1920px;
+  background-color: var(--color-black);
+  z-index: 1;
+}
+
+.original-e4deaa0018892167ed98e-icon9 {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  max-height: 100%;
+  width: 88.1px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.neuroai9 {
+  position: absolute;
+  top: 32px;
+  left: 88px;
+  display: inline-block;
+  width: 388.8px;
+  height: 62.2px;
+  z-index: 1;
+}
+
+.original-e4deaa0018892167ed98e-parent1 {
+  height: 127px;
+  width: 475.8px;
+  position: relative;
+  max-width: 100%;
+  font-size: var(--font-size-23xl);
+  font-family: var(--font-gowun-dodum);
+}
+
+.component-1-child3,
+.home10 {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.home10 {
+  margin-left: -14.5px;
+  margin-bottom: -4px;
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  min-width: 86.2px;
+}
+
+.component-1-child3 {
+  align-self: stretch;
+  height: 1px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.component-19,
+.home-icon5 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+.component-19 {
+  width: 84.8px;
+  height: 37px;
+  padding: 0 var(--padding-10xs) var(--padding-11xs);
+  z-index: 1;
+}
+
+.home-icon5 {
+  width: 324.8px;
+  padding: var(--padding-27xl) 0 0;
+  max-width: 100%;
+  margin-left: -137.8px;
+}
+
+.diagnose10 {
+  text-decoration: none;
+  position: relative;
+  color: inherit;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.navbar-items12,
+.navbar-items13 {
+  width: 385.8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-27xl) var(--padding-xl) 0 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  margin-left: -137.8px;
+}
+
+.navbar-items13 {
+  width: 417.8px;
+}
+
+.about9 {
+  text-decoration: none;
+  position: relative;
+  color: inherit;
+  display: inline-block;
+  min-width: 109px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.navbar-items14,
+.navbar-items15 {
+  width: 344.8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-27xl) var(--padding-xl) 0 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  margin-left: -137.8px;
+}
+
+.navbar-items15 {
+  width: 280.8px;
+}
+
+.screenshot-2024-09-06-122453-19,
+.screenshot-2024-09-06-122852-19 {
+  height: 56px;
+  width: 224px;
+  position: relative;
+  object-fit: cover;
+  display: none;
+  z-index: 8;
+}
+
+.screenshot-2024-09-06-122852-19 {
+  height: 50.8px;
+  border-radius: var(--br-6xs);
+  z-index: 9;
+}
+
+.screenshot-2024-09-06-123203-19 {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  border-radius: var(--br-xs);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.content-image,
+.navbar9 {
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.content-image {
+  height: 91.7px;
+  width: 224px;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-17xl) 0 0;
+  margin-left: -137.8px;
+}
+
+.navbar9 {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+  padding: var(--padding-11xs) var(--padding-xl) 0 var(--padding-2xl);
+  row-gap: 20px;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-15xl);
+  color: var(--color-white);
+  font-family: var(--font-gfs-neohellenic);
+}
+
+.downloadable-resources-for {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+}
+
+.warning-signs-of {
+  text-decoration: underline;
+}
+
+.about-alzheimers-disease {
+  color: inherit;
+}
+
+.about-alzheimers-disease-pdf {
+  margin-bottom: 0;
+}
+
+.warning-signs-of-alzheimers {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  padding-left: var(--padding-34xl);
+}
+
+.about-alzheimers-and-container {
+  align-self: stretch;
+  position: relative;
+  line-height: 136.91%;
+}
+
+.caregiving {
+  margin: 0;
+}
+
+.caregiving-taking-care-container {
+  position: relative;
+  line-height: 136.91%;
+}
+
+.caregiving-resources,
+.dementia-resources {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+
+.caregiving-resources {
+  width: 535px;
+  flex-direction: row;
+  padding: 0 var(--padding-6xs);
+  box-sizing: border-box;
+}
+
+.dementia-resources {
+  width: 690px;
+  flex-direction: column;
+  gap: var(--gap-23xl);
+  min-width: 690px;
+}
+
+.living-with-alzheimers-container {
+  flex: 1;
+  position: relative;
+  line-height: 136.91%;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.living-info {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 0 var(--padding-12xs);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.safety-driving-pdf-firearm-container {
+  position: relative;
+  line-height: 136.91%;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.living-resources {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xl);
+  min-width: 561px;
+  max-width: 100%;
+}
+
+.dementia-resources-parent,
+.resource-links {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+
+.dementia-resources-parent {
+  flex: 1;
+  justify-content: center;
+  gap: var(--gap-36xl);
+}
+
+.resource-links {
+  width: 1624px;
+  justify-content: flex-end;
+  padding: 0 var(--padding-5xs);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-21xl);
+  color: var(--color-gray-700);
+}
+
+.resources-header {
+  width: 1742px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-29xl);
+  max-width: 100%;
+  text-align: center;
+  font-size: var(--font-size-77xl);
+  color: var(--color-gray-100);
+  font-family: var(--font-gfs-neohellenic);
+}
+
+.resources-header-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.f653c1653324796405ef48dfa19-1-icon {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  pointer-events: none;
+  object-fit: cover;
+  opacity: 0.25;
+  z-index: 2;
+}
+
+.resources10 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-black);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-15xl);
+  box-sizing: border-box;
+  gap: var(--gap-9xl);
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+@media screen and (max-width: 1700px) {
+  .navbar9 {
+    flex-wrap: wrap;
+  }
+
+  .dementia-resources {
+    flex: 1;
+  }
+
+  .dementia-resources-parent {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .neuroai9 {
+    font-size: var(--font-size-15xl);
+  }
+
+  .about9,
+  .diagnose10,
+  .home10 {
+    font-size: var(--font-size-8xl);
+  }
+
+  .downloadable-resources-for {
+    font-size: var(--font-size-29xl);
+  }
+
+  .about-alzheimers-and-container,
+  .caregiving-taking-care-container {
+    font-size: var(--font-size-13xl);
+    line-height: 44px;
+  }
+
+  .dementia-resources {
+    gap: var(--gap-2xl);
+    min-width: 100%;
+  }
+
+  .living-with-alzheimers-container,
+  .safety-driving-pdf-firearm-container {
+    font-size: var(--font-size-13xl);
+    line-height: 44px;
+  }
+
+  .living-resources {
+    min-width: 100%;
+  }
+
+  .dementia-resources-parent {
+    gap: var(--gap-8xl);
+  }
+
+  .resources-header {
+    gap: var(--gap-5xl);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .neuroai9 {
+    font-size: var(--font-size-6xl);
+  }
+
+  .about9,
+  .diagnose10,
+  .home10 {
+    font-size: var(--font-size-xl);
+  }
+
+  .downloadable-resources-for {
+    font-size: var(--font-size-10xl);
+  }
+
+  .about-alzheimers-and-container,
+  .caregiving-taking-care-container,
+  .living-with-alzheimers-container,
+  .safety-driving-pdf-firearm-container {
+    font-size: var(--font-size-5xl);
+    line-height: 33px;
+  }
+}

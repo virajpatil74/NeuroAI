@@ -1,0 +1,380 @@
+.pill-online-video-cuttercom-icon {
+  position: absolute;
+  top: 96px;
+  left: 10px;
+  width: 817px;
+  height: 837px;
+  object-fit: cover;
+  padding-top: 20px;
+}
+
+.razorpay-button {
+  padding-top: 44px;
+}
+
+.about14 {
+  position: absolute;
+  top: calc(50% - 380px);
+  left: calc(50% - 190px);
+  font-size: var(--font-size-77xl);
+  color: var(--color-gray-100);
+  display: none;
+  width: 381px;
+}
+
+.our-mission {
+  top: 217px;
+  left: 1173px;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  width: 289px;
+  height: 73px;
+}
+
+.at-neuroai-our,
+.our-mission,
+.what-we-do {
+  margin: 0;
+  position: absolute;
+  display: inline-block;
+}
+
+.at-neuroai-our {
+  top: 308px;
+  left: 885px;
+  font-size: var(--font-size-13xl);
+  font-style: italic;
+  width: 864px;
+}
+
+.what-we-do {
+  top: 545px;
+  left: 1154px;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  width: 340px;
+  height: 73px;
+}
+
+.our-platform-uses {
+  top: 636px;
+  left: 900px;
+  font-size: var(--font-size-5xl);
+  width: 864px;
+}
+
+.get-in-touch,
+.if-you-have,
+.our-platform-uses {
+  position: absolute;
+  display: inline-block;
+}
+
+.get-in-touch {
+  margin: 0;
+  top: 788px;
+  left: 1154px;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  width: 326px;
+  height: 73px;
+}
+
+.if-you-have {
+  top: 879px;
+  left: 900px;
+  font-size: var(--font-size-5xl);
+  width: 865px;
+  height: 54px;
+}
+
+.navbar-child11 {
+  align-self: stretch;
+  width: 1920px;
+  position: relative;
+  background-color: var(--color-black);
+  display: none;
+  max-width: 100%;
+}
+
+.original-e4deaa0018892167ed98e-icon13 {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  max-height: 100%;
+  width: 88.1px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.neuroai13 {
+  position: absolute;
+  top: 32px;
+  left: 88px;
+  display: inline-block;
+  width: 388.8px;
+  height: 62.2px;
+  z-index: 1;
+}
+
+.logo-container2 {
+  height: 127px;
+  flex: 1;
+  max-width: 100%;
+  font-size: var(--font-size-23xl);
+  font-family: var(--font-gowun-dodum);
+}
+
+.component-1-child7,
+.home14,
+.logo-container2 {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.home14 {
+  margin-left: -14.5px;
+  margin-bottom: -4px;
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  min-width: 86.2px;
+}
+
+.component-1-child7 {
+  align-self: stretch;
+  height: 1px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.component-113,
+.home-link1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+.component-113 {
+  width: 84.8px;
+  height: 37px;
+  padding: 0 var(--padding-10xs) var(--padding-11xs);
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+.home-link1 {
+  width: 324.8px;
+  padding: var(--padding-27xl) 0 0;
+  max-width: 100%;
+  margin-left: -137.8px;
+}
+
+.diagnose14 {
+  text-decoration: none;
+  position: relative;
+  color: inherit;
+  flex-shrink: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.diagnose-link,
+.logo2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.diagnose-link {
+  flex-direction: column;
+  padding: var(--padding-27xl) 0 0;
+  margin-left: -137.8px;
+}
+
+.logo2 {
+  width: 691px;
+  flex-direction: row;
+  padding: 0 var(--padding-lgi) 0 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.education13 {
+  text-decoration: none;
+  position: relative;
+  color: inherit;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.nav-links {
+  width: 198px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-27xl) var(--padding-xl) 0 0;
+  box-sizing: border-box;
+}
+
+.about15 {
+  text-decoration: none;
+  position: relative;
+  color: inherit;
+  display: inline-block;
+  min-width: 109px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.nav-links1,
+.nav-links2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-27xl) var(--padding-base) 0 0;
+}
+
+.nav-links2 {
+  padding: var(--padding-27xl) 0 0;
+}
+
+.screenshot-2024-09-06-122453-113,
+.screenshot-2024-09-06-122852-113 {
+  height: 56px;
+  width: 224px;
+  position: relative;
+  object-fit: cover;
+  display: none;
+}
+
+.screenshot-2024-09-06-122852-113 {
+  height: 50.8px;
+  border-radius: var(--br-6xs);
+}
+
+.screenshot-2024-09-06-123203-113 {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  border-radius: var(--br-xs);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero {
+  height: 91.7px;
+  width: 224px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-17xl) 0 0;
+  box-sizing: border-box;
+}
+
+.about13,
+.navbar13 {
+  width: 100%;
+  color: var(--color-white);
+  font-family: var(--font-gfs-neohellenic);
+}
+
+.navbar13 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--padding-11xs) var(--padding-xl) 0 var(--padding-2xl);
+  box-sizing: border-box;
+  gap: var(--gap-63xl);
+  max-width: 100%;
+  z-index: 1;
+  text-align: left;
+  font-size: var(--font-size-15xl);
+}
+
+.about13 {
+  height: 1080px;
+  position: relative;
+  background-color: var(--color-black);
+  overflow: hidden;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  font-size: var(--font-size-45xl);
+}
+
+@media screen and (max-width: 750px) {
+  .about14 {
+    font-size: var(--font-size-29xl);
+  }
+
+  .our-mission {
+    font-size: var(--font-size-32xl);
+  }
+
+  .at-neuroai-our {
+    font-size: var(--font-size-7xl);
+  }
+
+  .get-in-touch,
+  .what-we-do {
+    font-size: var(--font-size-32xl);
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .navbar13 {
+    gap: var(--gap-22xl);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .about14 {
+    font-size: var(--font-size-10xl);
+  }
+
+  .our-mission {
+    font-size: var(--font-size-19xl);
+  }
+
+  .at-neuroai-our {
+    font-size: var(--font-size-lgi);
+  }
+
+  .what-we-do {
+    font-size: var(--font-size-19xl);
+  }
+
+  .our-platform-uses {
+    font-size: var(--font-size-lgi);
+  }
+
+  .get-in-touch {
+    font-size: var(--font-size-19xl);
+  }
+
+  .if-you-have {
+    font-size: var(--font-size-lgi);
+  }
+
+  .navbar13 {
+    gap: var(--gap-xl);
+  }
+}

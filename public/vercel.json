@@ -1,0 +1,57 @@
+{
+    "cleanUrls": true,
+    "rewrites": [
+        {
+            "source": "/diagnose",
+            "destination": "/diagnose.html"
+        },
+        {
+            "source": "/education-brain-basics",
+            "destination": "/education-brain-basics.html"
+        },
+        {
+            "source": "/education-alzheimers-effect",
+            "destination": "/education-alzheimers-effect.html"
+        },
+        {
+            "source": "/diagnosing",
+            "destination": "/diagnosing.html"
+        },
+        {
+            "source": "/no-a-d",
+            "destination": "/no-a-d.html"
+        },
+        {
+            "source": "/very-mild-diagnosis",
+            "destination": "/very-mild-diagnosis.html"
+        },
+        {
+            "source": "/mild-diagnosis",
+            "destination": "/mild-diagnosis.html"
+        },
+        {
+            "source": "/moderate-diagnosis",
+            "destination": "/moderate-diagnosis.html"
+        },
+        {
+            "source": "/about",
+            "destination": "/about.html"
+        },
+        {
+            "source": "/resources",
+            "destination": "/resources.html"
+        },
+        {
+            "source": "/warning-signs",
+            "destination": "/warning-signs.html"
+        },
+        {
+            "source": "/how-is-alzheimers-diagnosed",
+            "destination": "/how-is-alzheimers-diagnosed.html"
+        },
+        {
+            "source": "/donation",
+            "destination": "/donation.html"
+        }
+    ]
+}

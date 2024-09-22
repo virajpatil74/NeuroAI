@@ -1,0 +1,727 @@
+#map {
+  margin: auto;
+  border-radius: 35px;
+  margin-bottom: 60px;
+  margin-top: 20px;
+  z-index: 30;
+}
+
+#audioControl1 {
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  transition: color 0.3s ease;
+}
+
+/* Hover effect: Change text color to blue when hovered */
+#audioControl1:hover {
+  color: rgb(93, 12, 208);
+}
+
+#audioControl2 {
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  transition: color 0.3s ease;
+}
+
+/* Hover effect: Change text color to blue when hovered */
+#audioControl2:hover {
+  color: rgb(93, 12, 208);
+}
+
+#audioControl3 {
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  transition: color 0.3s ease;
+}
+
+/* Hover effect: Change text color to blue when hovered */
+#audioControl3:hover {
+  color: rgb(93, 12, 208);
+}
+
+body {
+  background-color: black;
+}
+
+.razorpay-button {
+  padding-top: 45px;
+}
+
+.navbar-inner {
+  align-self: stretch;
+  width: 1920px;
+  position: relative;
+  background-color: var(--color-black);
+  display: none;
+  max-width: 100%;
+  z-index: 1;
+}
+
+.original-e4deaa0018892167ed98e-icon2 {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  max-height: 100%;
+  width: 88.1px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.neuroai2 {
+  position: absolute;
+  top: 32px;
+  left: 88px;
+  display: inline-block;
+  width: 388.8px;
+  height: 62.2px;
+  z-index: 1;
+}
+
+.header {
+  height: 127px;
+  width: 475.8px;
+  position: relative;
+  max-width: 100%;
+  font-size: var(--font-size-23xl);
+  font-family: var(--font-gowun-dodum);
+}
+
+.component-1-item,
+.home3 {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.home3 {
+  margin-left: -14.5px;
+  margin-bottom: -4px;
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  min-width: 86.2px;
+}
+
+.component-1-item {
+  align-self: stretch;
+  height: 1px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.component-1-container,
+.component-12 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+.component-12 {
+  width: 84.8px;
+  height: 37px;
+  padding: 0 var(--padding-10xs) var(--padding-11xs);
+  z-index: 1;
+}
+
+.component-1-container {
+  width: 324.8px;
+  padding: var(--padding-27xl) 0 0;
+  max-width: 100%;
+  margin-left: -137.8px;
+}
+
+.diagnose3 {
+  text-decoration: none;
+  position: relative;
+  color: inherit;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.navigation-links,
+.navigation-links1 {
+  width: 385.8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-27xl) var(--padding-xl) 0 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  margin-left: -137.8px;
+}
+
+.navigation-links1 {
+  width: 417.8px;
+}
+
+.about2 {
+  text-decoration: none;
+  position: relative;
+  color: inherit;
+  display: inline-block;
+  min-width: 109px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.navigation-links2,
+.navigation-links3 {
+  width: 344.8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-27xl) var(--padding-xl) 0 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  margin-left: -137.8px;
+}
+
+.navigation-links3 {
+  width: 280.8px;
+}
+
+.screenshot-2024-09-06-122453-12,
+.screenshot-2024-09-06-122852-12 {
+  height: 56px;
+  width: 224px;
+  position: relative;
+  object-fit: cover;
+  display: none;
+  z-index: 8;
+}
+
+.screenshot-2024-09-06-122852-12 {
+  height: 50.8px;
+  border-radius: var(--br-6xs);
+  z-index: 9;
+}
+
+.screenshot-2024-09-06-123203-12 {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  border-radius: var(--br-xs);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.navbar2,
+.screenshot-2024-09-06-123203-1-frame {
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.screenshot-2024-09-06-123203-1-frame {
+  height: 91.7px;
+  width: 224px;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-17xl) 0 0;
+  margin-left: -137.8px;
+}
+
+.navbar2 {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+  padding: var(--padding-11xs) var(--padding-xl) 0 var(--padding-2xl);
+  row-gap: 20px;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-15xl);
+  color: var(--color-white);
+  font-family: var(--font-gfs-neohellenic);
+}
+
+.urgent-alert-moderate {
+  margin: 0;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  min-width: 759px;
+  max-width: 100%;
+}
+
+.report-button-background {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-26xl);
+  background-color: var(--color-red);
+  width: 430px;
+}
+
+.download-report-pdf {
+  cursor: pointer;
+  position: absolute;
+  top: 13px;
+  left: 34px;
+  line-height: 48px;
+  display: inline-block;
+  width: 497px;
+  height: 48px;
+  z-index: 1;
+}
+
+.report-button {
+  align-self: stretch;
+  height: 79px;
+  position: relative;
+}
+
+.alert-message,
+.report-button-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+
+.report-button-wrapper {
+  width: 530px;
+  flex-direction: column;
+  padding: var(--padding-9xs) 0 0;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-21xl);
+}
+
+.alert-message {
+  align-self: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: var(--gap-60xl);
+}
+
+.based-on-the,
+.moderate-stage-alzheimers {
+  line-height: 118.78%;
+  font-family: var(--font-gfs-neohellenic);
+}
+
+.moderate-stage-alzheimers {
+  text-decoration: underline;
+  line-height: 120.34%;
+}
+
+.this-diagnosis-indicates {
+  line-height: 118.78%;
+}
+
+.based-on-the-analysis-of-your {
+  margin: 0;
+}
+
+.the-analysis-suggests {
+  margin: 0;
+  line-height: 118.78%;
+}
+
+.based-on-the-container {
+  align-self: stretch;
+  position: relative;
+}
+
+.based-on-the-analysis-of-your-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-2xl) 0 0;
+  box-sizing: border-box;
+  min-width: 759px;
+  max-width: 100%;
+}
+
+.original-4083e46ce04a761e36bfb-icon {
+  width: 538px;
+  position: relative;
+  border-radius: var(--br-31xl);
+  max-height: 100%;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+.alert-box,
+.frame-group {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+
+.frame-group {
+  width: 1747px;
+  flex-direction: row;
+  gap: var(--gap-23xl);
+  text-align: left;
+  font-size: var(--font-size-21xl);
+}
+
+.alert-box {
+  align-self: stretch;
+  flex-direction: column;
+}
+
+.findings {
+  font-size: var(--font-size-45xl);
+  line-height: 121.46%;
+}
+
+.the-mri-scan {
+  line-height: 159.57%;
+}
+
+.findings-the-mri-scan-container {
+  position: relative;
+  text-align: left;
+  display: inline-block;
+  max-width: 100%;
+  font-size: var(--font-size-21xl);
+}
+
+.alert-container {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-mini);
+  box-sizing: border-box;
+  gap: 8px;
+  max-width: 100%;
+}
+
+.ed28e17526393364b049dd41ee3-2-icon {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  border-radius: var(--br-31xl);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.condition-image {
+  height: 617px;
+  width: 619px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-13xl) 0 0;
+  box-sizing: border-box;
+  min-width: 619px;
+  max-width: 100%;
+}
+
+.how-the-condition {
+  font-size: var(--font-size-45xl);
+}
+
+.in-the-moderate {
+  line-height: 156.03%;
+}
+
+.memory-loss-and {
+  line-height: 121.6%;
+}
+
+.how-the-condition-container {
+  flex: 1;
+  position: relative;
+  display: inline-block;
+  min-width: 681px;
+  max-width: 100%;
+}
+
+.condition-image-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-47xl);
+  max-width: 100%;
+}
+
+.possible-treatments {
+  font-size: var(--font-size-45xl);
+  line-height: 118.78%;
+}
+
+.while-there-is {
+  line-height: 144.33%;
+}
+
+.progression-medications-such {
+  line-height: 124.36%;
+}
+
+.possible-treatments-while-the-container {
+  flex: 1;
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.possible-treatments-while-the-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-12xs) 0 var(--padding-10xs);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.frame-parent1,
+.here-are-some {
+  font-size: var(--font-size-21xl);
+}
+
+.frame-parent1 {
+  width: 1733px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 87px;
+  max-width: 100%;
+  text-align: left;
+}
+
+.here-are-some {
+  margin: 0;
+  line-height: 144.33%;
+}
+
+.alert-container-parent,
+.nearby-hospitals-for-alzheimer-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+
+.nearby-hospitals-for-alzheimer-wrapper {
+  width: 1735px;
+  flex-direction: row;
+  padding: 0 var(--padding-10xs);
+  box-sizing: border-box;
+  font-size: var(--font-size-45xl);
+}
+
+.alert-container-parent {
+  flex: 1;
+  flex-direction: column;
+  gap: 103px;
+  text-align: center;
+  font-size: var(--font-size-41xl);
+  color: var(--color-white);
+  font-family: var(--font-gfs-neohellenic);
+}
+
+.content1,
+.moderate-diagnosis {
+  display: flex;
+  box-sizing: border-box;
+}
+
+.content1 {
+  width: 1880px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 var(--padding-33xl);
+  max-width: 100%;
+}
+
+.moderate-diagnosis {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-black);
+  overflow: hidden;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-47xl);
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+@media screen and (max-width: 1700px) {
+  .navbar2 {
+    flex-wrap: wrap;
+  }
+
+  .original-4083e46ce04a761e36bfb-icon {
+    flex: 1;
+  }
+
+  .frame-group {
+    flex-wrap: wrap;
+  }
+
+  .ed28e17526393364b049dd41ee3-2-icon {
+    align-self: stretch;
+    width: auto;
+  }
+
+  .condition-image {
+    flex: 1;
+  }
+
+  .condition-image-parent {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+
+  .based-on-the-analysis-of-your-wrapper,
+  .urgent-alert-moderate {
+    min-width: 100%;
+  }
+
+  .content1 {
+    padding-left: var(--padding-7xl);
+    padding-right: var(--padding-7xl);
+    box-sizing: border-box;
+  }
+
+  .moderate-diagnosis {
+    gap: var(--gap-14xl);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .neuroai2 {
+    font-size: var(--font-size-15xl);
+  }
+
+  .about2,
+  .diagnose3,
+  .home3 {
+    font-size: var(--font-size-8xl);
+  }
+
+  .urgent-alert-moderate {
+    font-size: var(--font-size-29xl);
+  }
+
+  .download-report-pdf {
+    font-size: var(--font-size-13xl);
+    line-height: 38px;
+  }
+
+  .alert-message {
+    gap: var(--gap-20xl);
+  }
+
+  .based-on-the-container {
+    font-size: var(--font-size-13xl);
+  }
+
+  .frame-group {
+    gap: var(--gap-2xl);
+  }
+
+  .findings-the-mri-scan-container {
+    font-size: var(--font-size-13xl);
+  }
+
+  .condition-image {
+    min-width: 100%;
+  }
+
+  .how-the-condition-container {
+    font-size: var(--font-size-13xl);
+    min-width: 100%;
+  }
+
+  .condition-image-parent {
+    gap: var(--gap-14xl);
+  }
+
+  .possible-treatments-while-the-container {
+    font-size: var(--font-size-13xl);
+  }
+
+  .frame-parent1 {
+    gap: var(--gap-24xl);
+  }
+
+  .alert-container-parent {
+    gap: var(--gap-32xl);
+  }
+
+  .moderate-diagnosis {
+    gap: var(--gap-base);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .neuroai2 {
+    font-size: var(--font-size-6xl);
+  }
+
+  .about2,
+  .diagnose3,
+  .home3 {
+    font-size: var(--font-size-xl);
+  }
+
+  .urgent-alert-moderate {
+    font-size: var(--font-size-17xl);
+  }
+
+  .download-report-pdf {
+    font-size: var(--font-size-5xl);
+    line-height: 29px;
+  }
+
+  .alert-message {
+    gap: var(--gap-xl);
+  }
+
+  .based-on-the-container,
+  .findings-the-mri-scan-container,
+  .how-the-condition-container {
+    font-size: var(--font-size-5xl);
+  }
+
+  .condition-image-parent {
+    gap: var(--gap-base);
+  }
+
+  .possible-treatments-while-the-container {
+    font-size: var(--font-size-5xl);
+  }
+
+  .frame-parent1 {
+    gap: var(--gap-3xl);
+  }
+
+  .alert-container-parent {
+    gap: var(--gap-7xl);
+  }
+}
